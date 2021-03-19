@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from "./redux/redux";
-import {BrowserRouter, HashRouter, Link, Redirect, Route, Switch, withRouter} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import {Provider} from "react-redux";
+import AppContainer from "./AppContainer";
 
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
       <Provider store={store}>
-          <App/>
+          <AppContainer/>
       </Provider>
       </BrowserRouter>
   </React.StrictMode>,
